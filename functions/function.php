@@ -3,10 +3,10 @@ $db = mysqli_connect("localhost", "root", "", "groceries");
 
 global $ff;
 
-function getpro($run_product)
+function getpro()
 {
 
-    global $db, $p_cat_id0, $id, $page, $count;
+    global $db, $p_cat_id0, $id, $page, $count, $run_product;
 
     // $per_page = 10;
     // $page = (isset($_GET['page'])) ? $_GET['page'] : 1;
@@ -71,7 +71,7 @@ function getProDef()
     $run_product = mysqli_query($db, $get_product);
     $count = mysqli_num_rows($run_product);
 
-    getpro($run_product);
+    getpro();
 }
 
 function getProA2Z()
@@ -89,7 +89,7 @@ function getProA2Z()
     $run_product = mysqli_query($db, $get_product);
     $count = mysqli_num_rows($run_product);
 
-    getpro($run_product);
+    getpro();
 }
 
 function getProZ2A()
@@ -107,7 +107,7 @@ function getProZ2A()
     $run_product = mysqli_query($db, $get_product);
     $count = mysqli_num_rows($run_product);
 
-    getpro($run_product);
+    getpro();
 }
 
 function getProL2H()
@@ -125,7 +125,7 @@ function getProL2H()
     $run_product = mysqli_query($db, $get_product);
     $count = mysqli_num_rows($run_product);
 
-    getpro($run_product);
+    getpro();
 }
 
 function getProH2L()
@@ -143,7 +143,7 @@ function getProH2L()
     $run_product = mysqli_query($db, $get_product);
     $count = mysqli_num_rows($run_product);
 
-    getpro($run_product);
+    getpro();
 }
 
 
